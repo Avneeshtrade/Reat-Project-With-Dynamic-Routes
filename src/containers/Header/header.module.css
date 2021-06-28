@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-left:1%;
+    padding-right:1%;
+    width: 100%;
+    /* background-color: white; */
+}
+
+.toggleButton:global(.ant-btn):hover,:focus{
+    color: black;
+    background: #fff;
+    border-color:white;
+}
+.company_logo:global(.ant-image){
+    width:10rem;
+}

@@ -1,0 +1,53 @@
+.sidebar:global(.ant-layout-sider .ant-layout-sider-trigger){ 
+    /* position: fixed; */
+    position: unset;
+    /* width:auto!important; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* padding-right: 10%; */
+    font-size: 1.3rem;
+    bottom: unset;
+    z-index: 1;
+    height: 48px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    /* background: #002140; */
+    background: #001529;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.sidebar:global(.ant-layout-sider){ 
+     display: flex; 
+     flex-direction: column-reverse;
+    /* position: fixed; */
+    /* z-index: 1; */
+     /* top: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* flex-direction: column; */
+    position: relative;
+    min-width: 0;
+    background: #001529;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 100%;
+    position: fixed;
+    top:64px;
+    left:0;
+    z-index: 2;
+    /* flex-direction: column-reverse; */
+    /* height: 100%; */
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* top: 10vh; */
+    /* top: unset; */
+    /* left: 0; */
+    /* bottom: 0vh; */
+    /* background-color: #111; */
+    /* overflow-x: hidden; */
+} 

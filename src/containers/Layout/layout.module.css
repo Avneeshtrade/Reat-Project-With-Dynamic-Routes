@@ -1,0 +1,14 @@
+.header:global(.ant-layout-header){
+    display: flex;
+    /* align-items: center; */
+    height: 64px;
+    /* padding: 0 50px; */
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 64px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left:0;
+    top:0;
+    right:0;
+}

@@ -1,0 +1,6 @@
+const socketActionTypes = {
+    INITIATE_SOCKET_SUCCESS: 'INITIATE_SOCKET_SUCCESS',
+    INITIATE_SOCKET_FAILURE: 'INITIATE_SOCKET_FAILURE'
+}
+
+export default socketActionTypes;
