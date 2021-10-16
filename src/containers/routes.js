@@ -23,8 +23,8 @@ const routes = {
     },
     {
       key: 2,
-      path: "/controlroom/Tab1",
-      content: "Tab1",
+      path: "/controlroom/login",
+      content: "Login",
       title:"tab1",
       icon: <KeyOutlined />,
       exact: true,
