@@ -1,7 +1,7 @@
 {
   "name": "control_room_frontend",
   "version": "0.1.0",
-  "homepage": "http://Avneeshtrade.github.io/react-gh-pages",
+  "homepage": "http://Avneeshtrade.github.io/Reat-Project-With-Dynamic-Routes",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.4.0",
