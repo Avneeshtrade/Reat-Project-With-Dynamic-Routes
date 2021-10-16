@@ -33,11 +33,7 @@ const Login = (props) => {
               <Button style={{position:'absolute',left:'30vw'}}>Reset</Button>
             </ButtonGroup>
           </Grid>
-          {/*             
-            <Grid item style={{ marginTop: 16 }}>
-            </Grid>
-            <Grid item style={{ marginTop: 16 }}>
-            </Grid> */}
+
         </Grid>
       </Paper>
     </form>
