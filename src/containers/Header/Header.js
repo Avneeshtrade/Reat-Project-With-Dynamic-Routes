@@ -1,15 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./header.module.css";
-import images from "../../theme/image";
 import { PoweroffOutlined } from "@ant-design/icons";
 import { Button, Menu, Dropdown, Space } from "antd";
-import { useDispatch, useSelector } from "react-redux";
-import { loginActionTypes } from "../../redux/actionTypes";
-import { setData } from "../../redux/actions";
-import { useHistory } from "react-router-dom";
-import { Emitter } from "../../utils/service";
-import SOCKET_CONSTANTS from "../../constants/event.constant";
-import { openNotification } from "../../utils/helpers/global";
+
 
 const AppHeader = (props) => {
  
@@ -17,7 +10,7 @@ const AppHeader = (props) => {
     <Menu>
       <Menu.Item
         onClick={() => {
-          props.history.push("/");
+          window.location.href = "/";
         }}
       >
         Logout

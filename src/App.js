@@ -7,11 +7,8 @@ import {
   Switch,
   useHistory,
 } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
-// import { loginActionTypes } from "../src/redux/actionTypes";
 import AppLayout from "./containers/Layout";
-// import jwtDecode from "jwt-decode";
-// import { socket } from "./utils/service";
+
 
 const loading = (
   <div className="pt-3 text-center">
@@ -36,7 +33,9 @@ function App() {
             name="controlroom"
             render={props=><AppLayout {...props} />}
           />
-          <Route path="/pagenotfound" component={PageNotFound} />
+          <Route>
+          <Redirect to='/controlroom/dashboard'/>
+        </Route>
       </React.Suspense>
     </BrowserRouter>
   );

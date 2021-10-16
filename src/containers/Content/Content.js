@@ -17,7 +17,7 @@ const AppContent = () => {
                     exact={route.exact}
                   />
                   )}
-            <Route path="*" >
+            <Route>
               <Redirect to="/pagenotfound" />
             </Route>
           </Switch>
