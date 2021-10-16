@@ -1,0 +1,2 @@
+(this.webpackJsonpcontrol_room_frontend=this.webpackJsonpcontrol_room_frontend||[]).push([[7],{324:function(n,o,r){"use strict";r.r(o),r.d(o,"default",(function(){return c}));var t=r(6),c=(r(0),function(n){return Object(t.jsx)("div",{children:"Dashboard"})})}}]);
+//# sourceMappingURL=7.87363de6.chunk.js.map
