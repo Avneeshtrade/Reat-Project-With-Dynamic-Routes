@@ -1,43 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import {
-  BrowserRouter,
-  Redirect,
-  Route,
-  Switch,
-  useHistory,
+  HashRouter,
+  // Redirect,
+  // Route,
+  // Switch,
 } from "react-router-dom";
 import AppLayout from "./containers/Layout";
+// import { LoginConstant } from "./constants/token.contants";
 
 
-const loading = (
+const Spinner = () => (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>
   </div>
 );
 
 //Importing Components
-const Login = React.lazy(() => import("./components/Login"));
-const Home = React.lazy(() => import("./components/Home"));
-const PageNotFound = React.lazy(() =>
-  import("./components/PageNotFound/PageNotFound")
-);
+// const Login = React.lazy(() => import("./components/Login"));
+// const Home = React.lazy(() => import("./components/Home"));
+// const PageNotFound = React.lazy(() =>
+//   import("./components/PageNotFound/PageNotFound")
+// );
 
-function App() {
-  const [isLogin,setIsLogin] = useState(true)
+function App(props) {
+ 
   return (
-    <BrowserRouter>
-      <React.Suspense fallback={loading}>
-            <Route
-            path="/controlroom"
-            name="controlroom"
-            render={props=><AppLayout {...props} />}
-          />
-          <Route>
-          <Redirect to='/controlroom/dashboard'/>
-        </Route>
-      </React.Suspense>
-    </BrowserRouter>
+    <HashRouter>
+      <Suspense fallback={<Spinner />}>    
+          <AppLayout {...props} />
+      </Suspense>
+    </HashRouter>
   );
 }
 

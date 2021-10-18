@@ -7,7 +7,7 @@ import { useDimensions } from "../../utils/helpers/global";
 import AppContent from "../Content/Content";
 
 const AppLayout = (props) => {
-  const { Header, Content } = Layout;
+  const {Content } = Layout;
   const [collapsed, setCollapsed] = useState(false);
   const [windowWidth, setWindowWidth] = useState(undefined);
   const { width } = useDimensions();
@@ -28,18 +28,7 @@ const AppLayout = (props) => {
     [width, collapsed]
   );
 
-  const toggle = () => {
-    setCollapsed(!collapsed);
-  };
   return (
-    <Layout>
-      <Header className={styles.header} style={{ padding: 0 }}>
-        <AppHeader
-          collapsed={collapsed}
-          onCollapse={onCollapse}
-          toggle={toggle}
-        />
-      </Header>
       <Layout className="site-layout">
         <Sidebar collapsed={collapsed} onCollapse={onCollapse} {...props} />
         <Content
@@ -58,7 +47,6 @@ const AppLayout = (props) => {
           <AppContent {...props} />
         </Content>
       </Layout>
-    </Layout>
   );
 };
 

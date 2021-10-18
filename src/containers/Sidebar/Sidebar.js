@@ -5,6 +5,7 @@ import styles from "./sidebar.module.css";
 import { pushToLink } from "../../utils/helpers/global";
 import { useHistory } from "react-router-dom";
 import routes from "../routes";
+import { LoginConstant } from "../../constants/token.contants";
 // import { getUserRole } from "../../utils/helpers/global";
 
 const Sidebar = (props) => {
@@ -12,7 +13,8 @@ const Sidebar = (props) => {
   const { collapsed, onCollapse } = props;
   const { Sider } = Layout;
   const { SubMenu } = Menu;
-  const content = routes.Admin;
+  const [isLoggedIn] = useState(localStorage.getItem(LoginConstant.tokenKey))
+  const content = isLoggedIn?routes.Admin:routes.NaiveUser;
   const handleItemChange = (link) => {
     pushToLink(history, link);
   };
