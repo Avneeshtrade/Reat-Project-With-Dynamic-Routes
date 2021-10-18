@@ -1,2 +1,0 @@
-(this.webpackJsonpcontrol_room_frontend=this.webpackJsonpcontrol_room_frontend||[]).push([[1],{323:function(n,o,r){"use strict";r.r(o),r.d(o,"default",(function(){return e}));var t=r(6),e=(r(0),function(n){return Object(t.jsx)("h1",{children:"Home Page is here"})})}}]);
-//# sourceMappingURL=1.5895a448.chunk.js.map

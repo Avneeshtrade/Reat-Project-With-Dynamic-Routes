@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Home/Home.js"],"names":["Home","props"],"mappings":"0LASeA,G,KANF,SAACC,GACZ,OACE","file":"static/js/5.53a5a05e.chunk.js","sourcesContent":["import React from \"react\";\r\n\r\n\r\nconst Home = (props) => {\r\n  return (\r\n    <h1>Home Page is here</h1>\r\n  );\r\n};\r\n\r\nexport default Home;\r\n"],"sourceRoot":""}
